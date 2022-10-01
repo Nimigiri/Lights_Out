@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+           
+            <ul>
+
+                <li><a href="explore.html" class="active">Explore</a></li>
+                <li><a href="#">Tunes</a></li>
+                <!-- <li><a href="#">lol</a></li> -->
+                <li><a href="#">Sign-in</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Lights Out</h2>
+            <!-- <a href="#sec" id="btn">Explore</a> -->
+            <img src="mountains_front.png" id="mountains_front">
+
+        </section>
+        <div class="sec">
+            <h2>Lights Out</h2>
+            <p>When you are working on music or other creative projects, it's easy to spend too much time preparing a final work.
+                This is a hindrance that slows down your productivity.
+                It's also a problem that can lead to burnout, frustration, and even quitting.
+                So how can you get the most out of your time?
+                When you are working on a creative project, make sure you are using a good working environment.
+                Whether you are working from home or a studio, LIGHTS OUT gives you many inspiratons and some comforting music in the background.<br> <br></p>
+
+                <p><em>
+                    “Every child is an artist; the problem is staying an artist when you grow up” – Pablo Picasso <br>
+“If you hear a voice within you say, ‘You cannot paint,’ then by all means paint, and that voice will be silenced” – Vincent Van Gogh<br>
+“Creativity takes courage.” – Henri Matisse<br>
+“Don’t think about making art, just get it done. Let everyone else decide if it’s good or bad, whether they love it or hate it. While they are deciding, make even more art.” – Andy Warhol<br>
+“Art is a collaboration between God and the artist, and the less the artist does the better.” – Andre Gide<br>
+“We don’t make mistakes, just happy little accidents.” – Bob Ross<br>
+“Painting is poetry that is seen rather than felt, and poetry is painting that is felt rather than seen.” – Leonardo da Vinci<br>
+“Every artist was first an amateur.” – Ralph Waldo Emerson<br>
+“There is nothing more truly artistic than to love people.” – Vincent van Gogh<br>
+“Art washes away from the soul the dust of everyday life.” – Pablo Picasso<br>
+“Color is my day-long obsession, joy and torment.” – Claude Monet<br>
+“I found I could say things with color and shapes that I couldn’t say any other way – things I had no words for.” – Georgia O’Keeffe<br>
+“I hold that the perfection of form and beauty is contained in the sum of all men.” – Albrecht Dürer<br>
+“Art is not what you see, but what you make others see.” – Edgar Degas<br>
+“In art, what we want is the certainty that one spark of original genius shall not be extinguished.” – Mary Cassatt<br>
+“A work of art which isn’t based on feeling isn’t art at all.” – Paul Cézanne<br>
+“Life is art. Art is life. I never separate it.” – Ai Weiwei<br>
+“Creativity is contagious, pass it on.” – Albert Einstein<br>
+“Everybody born comes from the Creator trailing wisps of glory. We come from the Creator with creativity. I think that each one of us is born with creativity.” – Maya Angelou<br>
+“Have no fear of perfection, you’ll never reach it.” – Salvador Dali<br>
+
+                </em> </p>
+        </div>
+        <script>
+            let stars= document.getElementById('stars');
+            let moon= document.getElementById('moon');
+            let mountains_behind= document.getElementById('mountains_behind');
+            let mountains_front= document.getElementById('mountains_front');
+            let text= document.getElementById('text');
+            let btn= document.getElementById('btn');
+
+            window.addEventListener('scroll', function(){
+                let value= window.scrollY;
+                stars.style.left=value*0.25 + 'px';
+                moon.style.top=value*1.05 + 'px';
+                mountains_behind.style.top=value*0.5 + 'px';
+                mountains_front.style.top=value*0 + 'px';
+                text.style.marginRight=value*2 + 'px';
+            })
+        </script>
+
+    </body>
+</html>
